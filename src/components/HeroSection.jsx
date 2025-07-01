@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Cloud, Shield, Zap, TrendingUp } from 'lucide-react';
 import CircularNode from './CircularNode';
@@ -40,91 +41,93 @@ const HeroSection = ({ language }) => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-devstilando-950/20">
-      {/* Massively Enhanced Animated Background Nodes */}
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      {/* Neural Network Background */}
       <div className="absolute inset-0 overflow-hidden">
-        {/* Layer 1 - Primary Nodes */}
-        <CircularNode size="sm" className="absolute top-20 left-20 animate-float" delay={0} />
-        <CircularNode size="md" variant="secondary" className="absolute top-40 right-32 animate-float" delay={1} />
-        <CircularNode size="lg" variant="accent" className="absolute bottom-40 left-16 animate-float" delay={2} />
-        <CircularNode size="md" className="absolute bottom-20 right-20 animate-float" delay={0.5} />
-        <CircularNode size="sm" variant="secondary" className="absolute top-1/2 left-1/3 animate-float" delay={1.5} />
-        <CircularNode size="sm" variant="accent" className="absolute top-32 right-16 animate-float" delay={2.5} />
-        <CircularNode size="md" variant="primary" className="absolute top-60 left-1/2 animate-float" delay={3} />
-        <CircularNode size="sm" className="absolute bottom-32 left-1/4 animate-float" delay={1.2} />
-        <CircularNode size="lg" variant="secondary" className="absolute top-1/3 right-1/4 animate-float" delay={0.8} />
-        <CircularNode size="sm" variant="accent" className="absolute bottom-60 right-1/3 animate-float" delay={2.2} />
+        {/* Dense Node Network - 30+ nodes */}
+        <CircularNode size="sm" className="absolute top-10 left-10 animate-float" delay={0} />
+        <CircularNode size="md" variant="secondary" className="absolute top-20 right-20 animate-float" delay={0.5} />
+        <CircularNode size="lg" variant="accent" className="absolute top-32 left-32 animate-float" delay={1} />
+        <CircularNode size="sm" className="absolute top-16 left-64 animate-float" delay={1.5} />
+        <CircularNode size="md" variant="primary" className="absolute top-40 right-40 animate-float" delay={2} />
+        <CircularNode size="sm" variant="secondary" className="absolute top-24 left-80 animate-float" delay={2.5} />
+        <CircularNode size="lg" variant="accent" className="absolute top-60 right-60 animate-float" delay={3} />
+        <CircularNode size="md" className="absolute top-44 left-96 animate-float" delay={3.5} />
+        <CircularNode size="sm" variant="primary" className="absolute top-72 right-80 animate-float" delay={4} />
+        <CircularNode size="md" variant="secondary" className="absolute top-80 left-20 animate-float" delay={4.5} />
         
-        {/* Layer 2 - Secondary Nodes */}
-        <CircularNode size="md" variant="accent" className="absolute top-16 left-1/2 animate-float" delay={3.5} />
-        <CircularNode size="sm" className="absolute top-80 right-12 animate-float" delay={4} />
-        <CircularNode size="lg" variant="primary" className="absolute bottom-16 left-1/3 animate-float" delay={4.5} />
-        <CircularNode size="md" variant="secondary" className="absolute top-1/4 left-12 animate-float" delay={5} />
-        <CircularNode size="sm" variant="accent" className="absolute bottom-1/4 right-12 animate-float" delay={5.5} />
-        <CircularNode size="lg" className="absolute top-3/4 right-1/2 animate-float" delay={6} />
-        <CircularNode size="sm" variant="primary" className="absolute top-12 right-1/3 animate-float" delay={6.5} />
-        <CircularNode size="md" variant="secondary" className="absolute bottom-12 left-1/2 animate-float" delay={7} />
+        <CircularNode size="lg" variant="accent" className="absolute top-96 right-32 animate-float" delay={5} />
+        <CircularNode size="sm" className="absolute top-52 left-48 animate-float" delay={5.5} />
+        <CircularNode size="md" variant="primary" className="absolute top-64 right-96 animate-float" delay={6} />
+        <CircularNode size="sm" variant="secondary" className="absolute top-88 left-72 animate-float" delay={6.5} />
+        <CircularNode size="lg" variant="accent" className="absolute top-36 right-48 animate-float" delay={7} />
+        <CircularNode size="md" className="absolute top-48 left-24 animate-float" delay={7.5} />
+        <CircularNode size="sm" variant="primary" className="absolute top-76 right-72 animate-float" delay={8} />
+        <CircularNode size="md" variant="secondary" className="absolute top-84 left-40 animate-float" delay={8.5} />
+        <CircularNode size="lg" variant="accent" className="absolute top-28 right-64 animate-float" delay={9} />
+        <CircularNode size="sm" className="absolute top-56 left-88 animate-float" delay={9.5} />
         
-        {/* Layer 3 - Tertiary Nodes */}
-        <CircularNode size="sm" variant="accent" className="absolute top-1/3 left-2/3 animate-float" delay={7.5} />
-        <CircularNode size="lg" variant="primary" className="absolute bottom-1/3 right-2/3 animate-float" delay={8} />
-        <CircularNode size="md" className="absolute top-2/3 left-1/4 animate-float" delay={8.5} />
-        <CircularNode size="sm" variant="secondary" className="absolute bottom-2/3 right-1/4 animate-float" delay={9} />
-        <CircularNode size="md" variant="accent" className="absolute top-1/4 right-2/3 animate-float" delay={9.5} />
-        <CircularNode size="sm" variant="primary" className="absolute bottom-3/4 left-2/3 animate-float" delay={10} />
+        <CircularNode size="md" variant="primary" className="absolute top-68 right-24 animate-float" delay={10} />
+        <CircularNode size="sm" variant="secondary" className="absolute top-92 left-56 animate-float" delay={10.5} />
+        <CircularNode size="lg" variant="accent" className="absolute top-12 right-88 animate-float" delay={11} />
+        <CircularNode size="md" className="absolute top-100 left-8 animate-float" delay={11.5} />
+        <CircularNode size="sm" variant="primary" className="absolute top-4 right-56 animate-float" delay={12} />
+        <CircularNode size="md" variant="secondary" className="absolute top-104 left-64 animate-float" delay={12.5} />
+        <CircularNode size="lg" variant="accent" className="absolute top-8 right-8 animate-float" delay={13} />
+        <CircularNode size="sm" className="absolute top-108 left-80 animate-float" delay={13.5} />
+        <CircularNode size="md" variant="primary" className="absolute top-2 right-40 animate-float" delay={14} />
+        <CircularNode size="sm" variant="secondary" className="absolute top-112 left-16 animate-float" delay={14.5} />
         
-        {/* Enhanced Connection Lines - Much More Visible */}
-        <div className="absolute top-20 left-20 w-64 h-1 bg-gradient-to-r from-primary/80 via-primary/60 to-transparent transform rotate-45 opacity-70 animate-pulse"></div>
-        <div className="absolute top-40 right-32 w-48 h-1 bg-gradient-to-r from-purple-500/80 via-purple-500/60 to-transparent transform -rotate-12 opacity-70 animate-pulse" style={{animationDelay: '1s'}}></div>
-        <div className="absolute bottom-40 left-16 w-72 h-1 bg-gradient-to-r from-pink-500/80 via-pink-500/60 to-transparent transform rotate-12 opacity-70 animate-pulse" style={{animationDelay: '2s'}}></div>
-        <div className="absolute top-1/2 left-1/3 w-56 h-1 bg-gradient-to-r from-primary/80 via-primary/60 to-transparent transform -rotate-45 opacity-60 animate-pulse" style={{animationDelay: '1.5s'}}></div>
-        <div className="absolute top-32 right-16 w-52 h-1 bg-gradient-to-r from-pink-500/80 via-pink-500/60 to-transparent transform rotate-30 opacity-70 animate-pulse" style={{animationDelay: '2.5s'}}></div>
-        <div className="absolute bottom-32 left-1/4 w-60 h-1 bg-gradient-to-r from-purple-500/80 via-purple-500/60 to-transparent transform -rotate-20 opacity-60 animate-pulse" style={{animationDelay: '1.2s'}}></div>
+        {/* Neural Network Connection Lines */}
+        <div className="absolute top-10 left-10 w-32 h-1 bg-gradient-to-r from-primary/70 via-primary/50 to-transparent transform rotate-45 opacity-60 animate-pulse"></div>
+        <div className="absolute top-20 right-20 w-40 h-1 bg-gradient-to-r from-purple-500/70 via-purple-500/50 to-transparent transform -rotate-12 opacity-60 animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-32 left-32 w-48 h-1 bg-gradient-to-r from-pink-500/70 via-pink-500/50 to-transparent transform rotate-30 opacity-60 animate-pulse" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-40 right-40 w-36 h-1 bg-gradient-to-r from-primary/70 via-primary/50 to-transparent transform -rotate-45 opacity-60 animate-pulse" style={{animationDelay: '1.5s'}}></div>
+        <div className="absolute top-60 right-60 w-44 h-1 bg-gradient-to-r from-purple-500/70 via-purple-500/50 to-transparent transform rotate-60 opacity-60 animate-pulse" style={{animationDelay: '3s'}}></div>
+        <div className="absolute top-80 left-20 w-52 h-1 bg-gradient-to-r from-pink-500/70 via-pink-500/50 to-transparent transform -rotate-30 opacity-60 animate-pulse" style={{animationDelay: '2.5s'}}></div>
+        <div className="absolute top-96 right-32 w-38 h-1 bg-gradient-to-r from-primary/70 via-primary/50 to-transparent transform rotate-15 opacity-60 animate-pulse" style={{animationDelay: '4s'}}></div>
+        <div className="absolute top-64 right-96 w-42 h-1 bg-gradient-to-r from-purple-500/70 via-purple-500/50 to-transparent transform -rotate-60 opacity-60 animate-pulse" style={{animationDelay: '3.5s'}}></div>
+        <div className="absolute top-36 right-48 w-34 h-1 bg-gradient-to-r from-pink-500/70 via-pink-500/50 to-transparent transform rotate-75 opacity-60 animate-pulse" style={{animationDelay: '5s'}}></div>
+        <div className="absolute top-76 right-72 w-46 h-1 bg-gradient-to-r from-primary/70 via-primary/50 to-transparent transform -rotate-15 opacity-60 animate-pulse" style={{animationDelay: '4.5s'}}></div>
         
-        {/* Additional Connection Lines */}
-        <div className="absolute top-16 left-1/2 w-40 h-1 bg-gradient-to-r from-pink-500/70 via-pink-500/50 to-transparent transform rotate-60 opacity-60 animate-pulse" style={{animationDelay: '3.5s'}}></div>
-        <div className="absolute bottom-16 right-1/3 w-44 h-1 bg-gradient-to-r from-primary/70 via-primary/50 to-transparent transform -rotate-30 opacity-60 animate-pulse" style={{animationDelay: '4s'}}></div>
-        <div className="absolute top-3/4 left-1/4 w-36 h-1 bg-gradient-to-r from-purple-500/70 via-purple-500/50 to-transparent transform rotate-15 opacity-60 animate-pulse" style={{animationDelay: '4.5s'}}></div>
-        <div className="absolute bottom-1/4 right-1/2 w-48 h-1 bg-gradient-to-r from-pink-500/70 via-pink-500/50 to-transparent transform -rotate-60 opacity-60 animate-pulse" style={{animationDelay: '5s'}}></div>
+        {/* Vertical Connections */}
+        <div className="absolute top-24 left-64 w-1 h-32 bg-gradient-to-b from-primary/60 to-transparent opacity-70 animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-44 left-96 w-1 h-28 bg-gradient-to-b from-purple-500/60 to-transparent opacity-60 animate-pulse" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-52 left-48 w-1 h-36 bg-gradient-to-b from-pink-500/60 to-transparent opacity-70 animate-pulse" style={{animationDelay: '3s'}}></div>
+        <div className="absolute top-68 right-24 w-1 h-24 bg-gradient-to-b from-primary/60 to-transparent opacity-60 animate-pulse" style={{animationDelay: '2.5s'}}></div>
+        <div className="absolute top-84 left-40 w-1 h-32 bg-gradient-to-b from-purple-500/60 to-transparent opacity-70 animate-pulse" style={{animationDelay: '4s'}}></div>
         
-        {/* Enhanced Circular Connection Arcs - More Visible and Varied */}
-        <div className="absolute top-40 left-40 w-32 h-32 border-2 border-primary/50 rounded-full animate-pulse opacity-80" style={{animationDelay: '0.5s'}}></div>
-        <div className="absolute bottom-40 right-40 w-40 h-40 border-2 border-purple-500/50 rounded-full animate-pulse opacity-70" style={{animationDelay: '1.5s'}}></div>
-        <div className="absolute top-1/2 left-1/2 w-24 h-24 border-2 border-pink-500/50 rounded-full animate-pulse opacity-90 transform -translate-x-1/2 -translate-y-1/2" style={{animationDelay: '2.5s'}}></div>
-        <div className="absolute top-20 right-1/3 w-28 h-28 border-2 border-primary/60 rounded-full animate-pulse opacity-60" style={{animationDelay: '3s'}}></div>
-        <div className="absolute bottom-20 left-1/4 w-36 h-36 border-2 border-purple-500/40 rounded-full animate-pulse opacity-70" style={{animationDelay: '3.5s'}}></div>
-        <div className="absolute top-1/4 right-1/4 w-20 h-20 border-2 border-pink-500/60 rounded-full animate-pulse opacity-80" style={{animationDelay: '4s'}}></div>
-        <div className="absolute bottom-1/4 left-1/3 w-44 h-44 border-2 border-primary/40 rounded-full animate-pulse opacity-50" style={{animationDelay: '4.5s'}}></div>
-        <div className="absolute top-3/4 right-2/3 w-32 h-32 border-2 border-purple-500/60 rounded-full animate-pulse opacity-70" style={{animationDelay: '5s'}}></div>
+        {/* Neural Network Circles */}
+        <div className="absolute top-20 left-40 w-24 h-24 border-2 border-primary/40 rounded-full animate-pulse opacity-60" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-60 right-80 w-32 h-32 border-2 border-purple-500/40 rounded-full animate-pulse opacity-50" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-80 left-60 w-28 h-28 border-2 border-pink-500/40 rounded-full animate-pulse opacity-70" style={{animationDelay: '3s'}}></div>
+        <div className="absolute top-40 right-20 w-20 h-20 border-2 border-primary/50 rounded-full animate-pulse opacity-60" style={{animationDelay: '1.5s'}}></div>
+        <div className="absolute top-100 left-80 w-36 h-36 border-2 border-purple-500/30 rounded-full animate-pulse opacity-50" style={{animationDelay: '4s'}}></div>
+        <div className="absolute top-16 right-60 w-26 h-26 border-2 border-pink-500/50 rounded-full animate-pulse opacity-70" style={{animationDelay: '2.5s'}}></div>
+        <div className="absolute top-88 left-24 w-30 h-30 border-2 border-primary/40 rounded-full animate-pulse opacity-60" style={{animationDelay: '3.5s'}}></div>
+        <div className="absolute top-72 right-40 w-22 h-22 border-2 border-purple-500/50 rounded-full animate-pulse opacity-80" style={{animationDelay: '4.5s'}}></div>
         
-        {/* Dotted Connection Paths - More Visible */}
-        <div className="absolute top-24 left-24 w-1 h-40 bg-gradient-to-b from-primary/60 to-transparent opacity-80 animate-pulse"></div>
-        <div className="absolute bottom-24 right-24 w-1 h-36 bg-gradient-to-t from-purple-500/60 to-transparent opacity-70 animate-pulse" style={{animationDelay: '1s'}}></div>
-        <div className="absolute top-1/2 right-1/4 w-32 h-1 bg-gradient-to-r from-pink-500/60 to-transparent opacity-80 animate-pulse" style={{animationDelay: '2s'}}></div>
-        <div className="absolute bottom-1/3 left-1/3 w-1 h-32 bg-gradient-to-b from-primary/60 to-transparent opacity-70 animate-pulse" style={{animationDelay: '2.5s'}}></div>
-        <div className="absolute top-1/3 right-1/3 w-28 h-1 bg-gradient-to-r from-purple-500/60 to-transparent opacity-80 animate-pulse" style={{animationDelay: '3s'}}></div>
-        
-        {/* Animated Gradient Overlays */}
-        <div className="absolute top-10 left-10 w-20 h-20 bg-gradient-radial from-primary/30 to-transparent rounded-full animate-pulse opacity-60" style={{animationDelay: '1s'}}></div>
-        <div className="absolute bottom-10 right-10 w-24 h-24 bg-gradient-radial from-purple-500/30 to-transparent rounded-full animate-pulse opacity-70" style={{animationDelay: '2s'}}></div>
-        <div className="absolute top-1/2 left-10 w-16 h-16 bg-gradient-radial from-pink-500/30 to-transparent rounded-full animate-pulse opacity-80" style={{animationDelay: '3s'}}></div>
-        <div className="absolute bottom-1/2 right-10 w-28 h-28 bg-gradient-radial from-primary/30 to-transparent rounded-full animate-pulse opacity-50" style={{animationDelay: '4s'}}></div>
-        
-        {/* Moving Particles Effect */}
+        {/* Floating Particles */}
         <div className="absolute top-0 left-0 w-full h-full">
-          {Array.from({ length: 15 }, (_, i) => (
+          {Array.from({ length: 25 }, (_, i) => (
             <div
               key={i}
-              className="absolute w-1 h-1 bg-primary/40 rounded-full animate-bounce"
+              className="absolute w-1 h-1 bg-primary/30 rounded-full animate-bounce"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
                 animationDelay: `${Math.random() * 5}s`,
-                animationDuration: `${3 + Math.random() * 2}s`
+                animationDuration: `${3 + Math.random() * 3}s`
               }}
             />
           ))}
         </div>
+        
+        {/* Gradient Overlays */}
+        <div className="absolute top-14 left-14 w-16 h-16 bg-gradient-radial from-primary/20 to-transparent rounded-full animate-pulse opacity-70" style={{animationDelay: '1s'}}></div>
+        <div className="absolute bottom-14 right-14 w-20 h-20 bg-gradient-radial from-purple-500/20 to-transparent rounded-full animate-pulse opacity-60" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-1/2 left-14 w-12 h-12 bg-gradient-radial from-pink-500/20 to-transparent rounded-full animate-pulse opacity-80" style={{animationDelay: '3s'}}></div>
+        <div className="absolute bottom-1/2 right-14 w-24 h-24 bg-gradient-radial from-primary/20 to-transparent rounded-full animate-pulse opacity-50" style={{animationDelay: '4s'}}></div>
       </div>
 
       <div className="container mx-auto px-4 text-center relative z-10">
