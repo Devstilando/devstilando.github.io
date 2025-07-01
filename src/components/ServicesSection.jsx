@@ -1,6 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Cloud, Shield, Zap, TrendingUp, Users, Award, Code, RefreshCw, BookOpen } from 'lucide-react';
+import { Cloud, Shield, Zap, TrendingUp, Code, RefreshCw, BookOpen } from 'lucide-react';
 
 const ServicesSection = ({ language }) => {
   const translations = {
@@ -11,8 +11,6 @@ const ServicesSection = ({ language }) => {
       cloudDescription: 'Trabajamos con los 3 principales proveedores: AWS, GCP y Azure. Contamos con personal certificado en la nube. Podemos realizar tanto mantenimiento como arquitecturas en la nube desde cero.',
       auditTitle: 'Auditoría de Cloud',
       auditDescription: 'Colaboramos con otras consultoras como expertos auditores de la nube, asegurando las mejores prácticas y optimización.',
-      talentTitle: 'Atracción de Talento',
-      talentDescription: 'Ayudamos en la atracción de talento preparado y especializado en tecnologías de la nube.',
       developmentTitle: 'Desarrollo de Sistemas',
       developmentDescription: 'Creamos soluciones tecnológicas personalizadas desde cero, utilizando las mejores prácticas y tecnologías modernas.',
       migrationTitle: 'Migraciones Legacy',
@@ -32,8 +30,6 @@ const ServicesSection = ({ language }) => {
       cloudDescription: 'We work with the 3 main providers: AWS, GCP and Azure. We have certified cloud personnel. We can perform both maintenance and cloud architectures from scratch.',
       auditTitle: 'Cloud Audit',
       auditDescription: 'We collaborate with other consultancies as expert cloud auditors, ensuring best practices and optimization.',
-      talentTitle: 'Talent Attraction',
-      talentDescription: 'We help in attracting prepared talent specialized in cloud technologies.',
       developmentTitle: 'System Development',
       developmentDescription: 'We create custom technological solutions from scratch, using best practices and modern technologies.',
       migrationTitle: 'Legacy Migrations',
@@ -125,18 +121,6 @@ const ServicesSection = ({ language }) => {
             </CardHeader>
             <CardContent>
               <p className="text-foreground/80">{t.practicesDescription}</p>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300">
-            <CardHeader>
-              <CardTitle className="flex items-center text-xl">
-                <Users className="w-6 h-6 text-primary mr-2" />
-                {t.talentTitle}
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-foreground/80">{t.talentDescription}</p>
             </CardContent>
           </Card>
         </div>
