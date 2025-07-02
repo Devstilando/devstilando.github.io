@@ -32,7 +32,7 @@ const ClientsSection = ({ language }) => {
           </p>
         </div>
 
-          <div className="grid grid-cols-3 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {/* Aquí puedes agregar las imágenes pequeñas de los clientes */}
           <div className="flex items-center justify-center p-6 rounded-lg bg-primary/10 border border-primary/20">
             <img src="/images/bbva.png" alt="Cliente 1" className="mx-auto max-h-12" />
