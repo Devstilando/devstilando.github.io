@@ -1,7 +1,7 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Mail, MapPin, Send } from 'lucide-react';
+import { useRef } from 'react';
 
 const LinkedInIcon = () => (
   <svg
@@ -23,7 +23,9 @@ const ContactSection = ({ language }) => {
       linkedin: 'LinkedIn',
       location: 'Ubicación',
       cta: 'Enviar Correo',
-      ctaDescription: 'Contáctanos para una consulta gratuita'
+      ctaDescription: 'Contáctanos para una consulta gratuita',
+      formEmail: 'Correo Electrónico',
+      formMessage: 'Mensaje'
     },
     en: {
       title: 'Contact',
@@ -32,11 +34,14 @@ const ContactSection = ({ language }) => {
       linkedin: 'LinkedIn',
       location: 'Location',
       cta: 'Send E-mail',
-      ctaDescription: 'Contact us for a free consultation'
+      ctaDescription: 'Contact us for a free consultation',
+      formEmail: 'Email',
+      formMessage: 'Message'
     }
   };
 
   const t = translations[language];
+  const formRef = useRef(null);
 
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-background to-devstilando-950/20">
@@ -95,22 +100,71 @@ const ContactSection = ({ language }) => {
               </CardContent>
             </Card>
           </div>
+        </div>
+        <div className="flex justify-center">
+          <form
+            action="https://formsubmit.co/contacto@devstilando.com"
+            method="POST"
+            className="w-full max-w-md"
+            ref={formRef}
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="Contacto devstilando.com"
+            />
+            <div className="mb-4">
+              <label
+                className="block text-gray-200 text-sm mb-2"
+                htmlFor="email"
+              >
+                {t.formEmail}
+              </label>
+              <input
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="email"
+                type="email"
+                name="email"
+                placeholder={t.formEmail}
+                required
+              />
+            </div>
+            <div className="mb-6">
+              <label
+                className="block text-gray-200 text-sm mb-2"
+                htmlFor="message"
+              >
+                {t.formMessage}
+              </label>
+              <textarea
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="message"
+                name="message"
+                placeholder={t.formMessage}
+                rows="4"
+                required
+              />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="https://devstilando.com/?messageSent=success" />
+            </div>
+            <div className="flex items-center justify-between">
+              <Button
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="submit"
+                onClick={() => {
 
-          <div className="text-center">
-            <p className="text-lg text-muted-foreground mb-6">{t.ctaDescription}</p>
-            <Button 
-              size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg glow-effect"
-              onClick={() => window.open('mailto:contacto@devstilando.com', '_blank')}
-            >
-              <Send className="mr-2 h-5 w-5" />
-              {t.cta}
-            </Button>
-          </div>
+                  formRef.current?.checkValidity() && formRef.current.submit();
+                }}
+              >
+                <Send className="mr-2 h-5 w-5" />
+                {t.cta}
+              </Button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
   );
-};
+}
 
 export default ContactSection;
