@@ -1,20 +1,20 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Building } from 'lucide-react';
+import { Building, Upload } from 'lucide-react';
 
 const ClientsSection = ({ language }) => {
   const translations = {
     es: {
       title: 'Nuestros Clientes',
       subtitle: 'Empresas que confían en nosotros',
-      placeholder: 'Logo del cliente',
-      note: 'Sección preparada para agregar logos de clientes'
+      placeholder: 'Aquí se mostrarán los logos de nuestros clientes',
+      uploadNote: 'Sección preparada para agregar imágenes de clientes'
     },
     en: {
       title: 'Our Clients',
       subtitle: 'Companies that trust us',
-      placeholder: 'Client logo',
-      note: 'Section ready to add client logos'
+      placeholder: 'Client logos will be displayed here',
+      uploadNote: 'Section ready to add client images'
     }
   };
 
@@ -32,29 +32,21 @@ const ClientsSection = ({ language }) => {
           </p>
         </div>
 
-        <Card className="bg-card/50 backdrop-blur-sm border-border/50">
-          <CardHeader className="text-center">
-            <CardTitle className="flex items-center justify-center text-xl">
-              <Building className="w-6 h-6 text-primary mr-2" />
-              {t.note}
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="py-12">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              {[1, 2, 3, 4, 5, 6].map((index) => (
-                <div 
-                  key={index}
-                  className="flex items-center justify-center h-24 bg-muted/20 border-2 border-dashed border-muted-foreground/30 rounded-lg hover:border-primary/50 transition-colors"
-                >
-                  <div className="text-center">
-                    <Building className="w-8 h-8 text-muted-foreground/50 mx-auto mb-2" />
-                    <p className="text-xs text-muted-foreground">{t.placeholder} {index}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
+          <div className="grid grid-cols-3 md:grid-cols-4 gap-6">
+          {/* Aquí puedes agregar las imágenes pequeñas de los clientes */}
+          <div className="flex items-center justify-center p-6 rounded-lg bg-primary/10 border border-primary/20">
+            <img src="/images/bbva.png" alt="Cliente 1" className="mx-auto max-h-12" />
+          </div>
+          <div className="flex items-center justify-center p-6 rounded-lg bg-primary/10 border border-primary/20">
+            <img src="/images/minu.png" alt="Cliente 2" className="mx-auto max-h-12" />
+          </div>
+          <div className="flex items-center justify-center p-6 rounded-lg bg-primary/10 border border-primary/20">
+            <img src="/images/traxi.svg" alt="Cliente 3" className="mx-auto max-h-12" />
+          </div>
+          <div className="flex items-center justify-center p-6 rounded-lg bg-primary/10 border border-primary/20">
+            <img src="/images/reddot.png" alt="Cliente 4" className="mx-auto max-h-12" />
+          </div>
+        </div>
       </div>
     </section>
   );

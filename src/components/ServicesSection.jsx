@@ -1,6 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Cloud, Shield, Zap, TrendingUp, Code, RefreshCw, BookOpen } from 'lucide-react';
+import { Cloud, Shield, Zap, TrendingUp, Users, Award } from 'lucide-react';
 
 const ServicesSection = ({ language }) => {
   const translations = {
@@ -11,17 +11,20 @@ const ServicesSection = ({ language }) => {
       cloudDescription: 'Trabajamos con los 3 principales proveedores: AWS, GCP y Azure. Contamos con personal certificado en la nube. Podemos realizar tanto mantenimiento como arquitecturas en la nube desde cero.',
       auditTitle: 'Auditoría de Cloud',
       auditDescription: 'Colaboramos con otras consultoras como expertos auditores de la nube, asegurando las mejores prácticas y optimización.',
-      developmentTitle: 'Desarrollo de Sistemas',
-      developmentDescription: 'Creamos soluciones tecnológicas personalizadas desde cero, utilizando las mejores prácticas y tecnologías modernas.',
-      migrationTitle: 'Migraciones Legacy',
-      migrationDescription: 'Migramos sistemas legacy a tecnologías de nueva generación, modernizando tu infraestructura tecnológica.',
-      practicesTitle: 'Mejores Prácticas',
-      practicesDescription: 'Acompañamiento en la implementación de mejores prácticas de desarrollo y arquitectura de software.',
+      talentTitle: 'Atracción de Talento',
+      talentDescription: 'Ayudamos en la atracción de talento preparado y especializado en tecnologías de la nube.',
+      customDevelopmentTitle: 'Desarrollo de Sistemas',
+      customDevelopmentDescription: 'Desarrollo de sistemas a la medida para cubrir las necesidades específicas de tu negocio.',
+      legacyMigrationTitle: 'Migraciones de Sistemas Legacy a Next Gen',
+      legacyMigrationDescription: 'Migramos tus sistemas legacy a tecnologías modernas y escalables para mejorar el rendimiento y la mantenibilidad.',
+      bestPracticesTitle: 'Acompañamiento en Mejores Prácticas de Desarrollo',
+      bestPracticesDescription: 'Te acompañamos en la implementación de mejores prácticas para optimizar el desarrollo y la calidad de tus proyectos.',
       principles: 'Nuestros Principios',
       easy: 'Fácil de usar',
       secure: 'Segura',
       efficient: 'Eficiente',
-      scalable: 'Escalable'
+      scalable: 'Escalable',
+      techSouldBe: 'La tecnología siempre debería ser...'
     },
     en: {
       title: 'Our Services',
@@ -30,17 +33,20 @@ const ServicesSection = ({ language }) => {
       cloudDescription: 'We work with the 3 main providers: AWS, GCP and Azure. We have certified cloud personnel. We can perform both maintenance and cloud architectures from scratch.',
       auditTitle: 'Cloud Audit',
       auditDescription: 'We collaborate with other consultancies as expert cloud auditors, ensuring best practices and optimization.',
-      developmentTitle: 'System Development',
-      developmentDescription: 'We create custom technological solutions from scratch, using best practices and modern technologies.',
-      migrationTitle: 'Legacy Migrations',
-      migrationDescription: 'We migrate legacy systems to next-generation technologies, modernizing your technological infrastructure.',
-      practicesTitle: 'Best Practices',
-      practicesDescription: 'Guidance in implementing development and software architecture best practices.',
+      talentTitle: 'Talent Attraction',
+      talentDescription: 'We help in attracting prepared talent specialized in cloud technologies.',
+      customDevelopmentTitle: 'Custom Systems Development',
+      customDevelopmentDescription: 'Custom systems development to meet the specific needs of your business.',
+      legacyMigrationTitle: 'Legacy Systems Migration to Next Gen',
+      legacyMigrationDescription: 'We migrate your legacy systems to modern and scalable technologies to improve performance and maintainability.',
+      bestPracticesTitle: 'Support in Best Development Practices',
+      bestPracticesDescription: 'We support you in implementing best practices to optimize development and the quality of your projects.',
       principles: 'Our Principles',
       easy: 'Easy to use',
       secure: 'Secure',
       efficient: 'Efficient',
-      scalable: 'Scalable'
+      scalable: 'Scalable',
+      techSouldBe: 'Technology should always be...'
     }
   };
 
@@ -58,7 +64,7 @@ const ServicesSection = ({ language }) => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
           <Card className="bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300">
             <CardHeader>
               <CardTitle className="flex items-center text-xl">
@@ -67,36 +73,14 @@ const ServicesSection = ({ language }) => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-foreground/80 mb-4">{t.cloudDescription}</p>
-              <div className="flex space-x-2 flex-wrap gap-2">
+              <p className="text-foreground/80 mb-4">
+                {t.cloudDescription}
+              </p>
+              <div className="flex space-x-4">
                 <div className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">AWS</div>
                 <div className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">GCP</div>
                 <div className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Azure</div>
               </div>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300">
-            <CardHeader>
-              <CardTitle className="flex items-center text-xl">
-                <Code className="w-6 h-6 text-primary mr-2" />
-                {t.developmentTitle}
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-foreground/80">{t.developmentDescription}</p>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300">
-            <CardHeader>
-              <CardTitle className="flex items-center text-xl">
-                <RefreshCw className="w-6 h-6 text-primary mr-2" />
-                {t.migrationTitle}
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-foreground/80">{t.migrationDescription}</p>
             </CardContent>
           </Card>
 
@@ -115,18 +99,47 @@ const ServicesSection = ({ language }) => {
           <Card className="bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300">
             <CardHeader>
               <CardTitle className="flex items-center text-xl">
-                <BookOpen className="w-6 h-6 text-primary mr-2" />
-                {t.practicesTitle}
+                <Award className="w-6 h-6 text-primary mr-2" />
+                {t.customDevelopmentTitle}
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-foreground/80">{t.practicesDescription}</p>
+              <p className="text-foreground/80">{t.customDevelopmentDescription}</p>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <Card className="bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300">
+            <CardHeader>
+              <CardTitle className="flex items-center text-xl">
+                <Zap className="w-6 h-6 text-primary mr-2" />
+                {t.legacyMigrationTitle}
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-foreground/80">{t.legacyMigrationDescription}</p>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300">
+            <CardHeader>
+              <CardTitle className="flex items-center text-xl">
+                <TrendingUp className="w-6 h-6 text-primary mr-2" />
+                {t.bestPracticesTitle}
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-foreground/80">{t.bestPracticesDescription}</p>
             </CardContent>
           </Card>
         </div>
 
         <div className="text-center mb-8">
           <h3 className="text-2xl font-bold mb-8">{t.principles}</h3>
+          <h3 className="text-xl font-semibold mb-6 italic text-muted-foreground">
+            {t.techSouldBe}
+          </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="flex flex-col items-center p-6 rounded-lg bg-primary/10 border border-primary/20">
               <Cloud className="w-8 h-8 text-primary mb-3" />

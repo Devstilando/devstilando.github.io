@@ -1,10 +1,22 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Globe } from 'lucide-react';
 
-const LanguageToggle = ({ currentLanguage, onLanguageChange }) => {
+const LanguageToggle = ({ onLanguageChange }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [detectedLanguage, setDetectedLanguage] = useState(null);
+
+  useEffect(() => {
+    const browserLang = navigator.language || navigator.userLanguage;
+    if (browserLang && browserLang.toLowerCase().startsWith('es')) {
+      setDetectedLanguage('es');
+      onLanguageChange('es');
+    } else {
+      setDetectedLanguage('en');
+      onLanguageChange('en');
+    }
+  }, [onLanguageChange]);
 
   return (
     <div className="relative">
@@ -15,12 +27,13 @@ const LanguageToggle = ({ currentLanguage, onLanguageChange }) => {
         className="flex items-center gap-2 bg-background/50 backdrop-blur-sm"
       >
         <Globe size={16} />
-        {currentLanguage === 'es' ? 'ES' : 'EN'}
+        {detectedLanguage === 'es' ? 'ES' : 'EN'}
       </Button>
       {isOpen && (
         <div className="absolute top-full mt-2 right-0 bg-background/90 backdrop-blur-sm border rounded-md shadow-lg z-50">
           <button
             onClick={() => {
+              setDetectedLanguage('es');
               onLanguageChange('es');
               setIsOpen(false);
             }}
@@ -30,6 +43,7 @@ const LanguageToggle = ({ currentLanguage, onLanguageChange }) => {
           </button>
           <button
             onClick={() => {
+              setDetectedLanguage('en');
               onLanguageChange('en');
               setIsOpen(false);
             }}
