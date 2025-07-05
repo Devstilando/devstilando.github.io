@@ -141,19 +141,19 @@ const ServicesSection = ({ language }) => {
             {t.techSouldBe}
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="flex flex-col items-center p-6 rounded-lg bg-primary/10 border border-primary/20">
+            <div className="flex flex-col items-center p-6 rounded-lg bg-primary/15 border border-primary/30">
               <Cloud className="w-8 h-8 text-primary mb-3" />
               <span className="font-medium">{t.easy}</span>
             </div>
-            <div className="flex flex-col items-center p-6 rounded-lg bg-primary/10 border border-primary/20">
+            <div className="flex flex-col items-center p-6 rounded-lg bg-primary/15 border border-primary/30">
               <Shield className="w-8 h-8 text-primary mb-3" />
               <span className="font-medium">{t.secure}</span>
             </div>
-            <div className="flex flex-col items-center p-6 rounded-lg bg-primary/10 border border-primary/20">
+            <div className="flex flex-col items-center p-6 rounded-lg bg-primary/15 border border-primary/30">
               <Zap className="w-8 h-8 text-primary mb-3" />
               <span className="font-medium">{t.efficient}</span>
             </div>
-            <div className="flex flex-col items-center p-6 rounded-lg bg-primary/10 border border-primary/20">
+            <div className="flex flex-col items-center p-6 rounded-lg bg-primary/15 border border-primary/30">
               <TrendingUp className="w-8 h-8 text-primary mb-3" />
               <span className="font-medium">{t.scalable}</span>
             </div>

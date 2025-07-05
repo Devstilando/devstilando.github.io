@@ -34,16 +34,16 @@ const ClientsSection = ({ language }) => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {/* Aquí puedes agregar las imágenes pequeñas de los clientes */}
-          <div className="flex items-center justify-center p-6 rounded-lg bg-primary/10 border border-primary/20">
+          <div className="flex items-center justify-center p-6 rounded-lg bg-primary/15 border border-primary/30">
             <img src="/images/bbva.png" alt="Cliente 1" className="mx-auto max-h-12" />
           </div>
-          <div className="flex items-center justify-center p-6 rounded-lg bg-primary/10 border border-primary/20">
+          <div className="flex items-center justify-center p-6 rounded-lg bg-primary/15 border border-primary/30">
             <img src="/images/minu.png" alt="Cliente 2" className="mx-auto max-h-12" />
           </div>
-          <div className="flex items-center justify-center p-6 rounded-lg bg-primary/10 border border-primary/20">
+          <div className="flex items-center justify-center p-6 rounded-lg bg-primary/15 border border-primary/30">
             <img src="/images/traxi.svg" alt="Cliente 3" className="mx-auto max-h-12" />
           </div>
-          <div className="flex items-center justify-center p-6 rounded-lg bg-primary/10 border border-primary/20">
+          <div className="flex items-center justify-center p-6 rounded-lg bg-primary/15 border border-primary/30">
             <img src="/images/reddot.png" alt="Cliente 4" className="mx-auto max-h-12" />
           </div>
         </div>
