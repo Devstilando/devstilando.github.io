@@ -9,25 +9,25 @@ const HeroSection = ({ language }) => {
     es: {
       title: 'Tecnología Destilada',
       subtitle: 'En su forma más pura',
-      description: 'Transformamos la complejidad tecnológica en soluciones simples, seguras y eficientes. Especialistas en cloud computing con más de 10 años de experiencia.',
+      description: 'Transformamos la complejidad tecnológica en soluciones simples, seguras y eficientes',
       cta: 'Conoce más',
       features: {
         easy: 'Fácil de usar',
         secure: 'Segura',
         efficient: 'Eficiente',
-        scalable: 'Escalable'
+        scalable: 'Crece contigo'
       }
     },
     en: {
       title: 'Distilled Technology',
       subtitle: 'In its purest form',
-      description: 'We transform technological complexity into simple, secure, and efficient solutions. Cloud computing specialists with over 10 years of experience.',
+      description: 'We transform technological complexity into simple, secure, and efficient solutions',
       cta: 'Learn more',
       features: {
         easy: 'Easy to use',
         secure: 'Secure',
         efficient: 'Efficient',
-        scalable: 'Scalable'
+        scalable: 'Grows with you'
       }
     }
   };

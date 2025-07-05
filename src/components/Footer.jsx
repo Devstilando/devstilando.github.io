@@ -4,30 +4,30 @@ import { Separator } from '@/components/ui/separator';
 const Footer = ({ language }) => {
   const translations = {
     es: {
-      company: 'Empresa',
-      legal: 'Legal',
-      careers: 'Carreras',
-      about: 'Acerca de',
-      services: 'Servicios',
+      company: 'Devstilando',
+      legal: 'Avisos legales',
+      careers: 'Trabaja con nosotros',
+      about: 'Sobre nosotros',
+      services: 'Qué ofrecemos',
       contact: 'Contacto',
-      privacy: 'Política de Privacidad',
-      terms: 'Términos y Condiciones',
-      vacancies: 'Vacantes',
+      privacy: 'Privacidad',
+      terms: 'Términos',
+      vacancies: 'Oportunidades',
       rights: 'Todos los derechos reservados.',
-      description: 'Tecnología destilada en su forma más pura'
+      description: 'Tecnología simple para tu negocio'
     },
     en: {
-      company: 'Company',
+      company: 'Devstilando',
       legal: 'Legal',
       careers: 'Careers',
-      about: 'About',
-      services: 'Services',
+      about: 'About Us',
+      services: 'What We Offer',
       contact: 'Contact',
       privacy: 'Privacy Policy',
-      terms: 'Terms and Conditions',
-      vacancies: 'Job Openings',
+      terms: 'Terms',
+      vacancies: 'Opportunities',
       rights: 'All rights reserved.',
-      description: 'Distilled technology in its purest form'
+      description: 'Simple technology for your business'
     }
   };
 

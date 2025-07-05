@@ -5,16 +5,16 @@ import { Building, Upload } from 'lucide-react';
 const ClientsSection = ({ language }) => {
   const translations = {
     es: {
-      title: 'Nuestros Clientes',
-      subtitle: 'Empresas que confían en nosotros',
-      placeholder: 'Aquí se mostrarán los logos de nuestros clientes',
-      uploadNote: 'Sección preparada para agregar imágenes de clientes'
+      title: 'Nuestros clientes',
+      subtitle: 'Empresas que usan nuestra tecnología',
+      placeholder: 'Logos de nuestros clientes',
+      uploadNote: 'Empresas que confían en Devstilando'
     },
     en: {
       title: 'Our Clients',
-      subtitle: 'Companies that trust us',
-      placeholder: 'Client logos will be displayed here',
-      uploadNote: 'Section ready to add client images'
+      subtitle: 'Companies using our solutions',
+      placeholder: 'Our clients’ logos',
+      uploadNote: 'Businesses trusting Devstilando'
     }
   };
 

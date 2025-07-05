@@ -5,28 +5,28 @@ import { Award, Calendar, Users, Target } from 'lucide-react';
 const ExperienceSection = ({ language }) => {
   const translations = {
     es: {
-      title: 'Nuestra Experiencia',
-      subtitle: 'Más de una década transformando empresas',
-      experience: '10+ Años',
-      experienceDesc: 'de experiencia en TI',
-      clients: 'Múltiples',
-      clientsDesc: 'clientes satisfechos',
-      partnerships: 'Colaboraciones',
-      partnershipsDesc: 'con consultoras líderes',
-      expertise: 'Especialización',
-      expertiseDesc: 'en tecnologías cloud'
+      title: 'Nuestra trayectoria',
+      subtitle: 'Más de 10 años ayudando a negocios',
+      experience: '10+ años',
+      experienceDesc: 'ayudando a tu negocio',
+      clients: 'Clientes satisfechos',
+      clientsDesc: 'empresas felices con nuestro servicio',
+      partnerships: 'Alianzas',
+      partnershipsDesc: 'con socios estratégicos',
+      expertise: 'Especialidad',
+      expertiseDesc: 'soluciones en la nube'
     },
     en: {
-      title: 'Our Experience',
-      subtitle: 'More than a decade transforming companies',
-      experience: '10+ Years',
-      experienceDesc: 'of IT experience',
-      clients: 'Multiple',
-      clientsDesc: 'satisfied clients',
+      title: 'Our Journey',
+      subtitle: 'Over 10 years supporting businesses',
+      experience: '10+ years',
+      experienceDesc: 'helping your business',
+      clients: 'Happy Clients',
+      clientsDesc: 'businesses delighted with our service',
       partnerships: 'Partnerships',
-      partnershipsDesc: 'with leading consultancies',
-      expertise: 'Specialization',
-      expertiseDesc: 'in cloud technologies'
+      partnershipsDesc: 'with strategic partners',
+      expertise: 'What We Specialize In',
+      expertiseDesc: 'cloud solutions'
     }
   };
 

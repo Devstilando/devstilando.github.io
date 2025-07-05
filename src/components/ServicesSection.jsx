@@ -5,48 +5,48 @@ import { Cloud, Shield, Zap, TrendingUp, Users, Award } from 'lucide-react';
 const ServicesSection = ({ language }) => {
   const translations = {
     es: {
-      title: 'Nuestros Servicios',
-      subtitle: 'Especialistas en la nube',
-      cloudTitle: 'Cloud Computing',
-      cloudDescription: 'Trabajamos con los 3 principales proveedores: AWS, GCP y Azure. Contamos con personal certificado en la nube. Podemos realizar tanto mantenimiento como arquitecturas en la nube desde cero.',
-      auditTitle: 'Auditoría de Cloud',
-      auditDescription: 'Colaboramos con otras consultoras como expertos auditores de la nube, asegurando las mejores prácticas y optimización.',
-      talentTitle: 'Atracción de Talento',
-      talentDescription: 'Ayudamos en la atracción de talento preparado y especializado en tecnologías de la nube.',
-      customDevelopmentTitle: 'Desarrollo de Sistemas',
-      customDevelopmentDescription: 'Desarrollo de sistemas a la medida para cubrir las necesidades específicas de tu negocio.',
-      legacyMigrationTitle: 'Migraciones de Sistemas Legacy a Next Gen',
-      legacyMigrationDescription: 'Migramos tus sistemas legacy a tecnologías modernas y escalables para mejorar el rendimiento y la mantenibilidad.',
-      bestPracticesTitle: 'Acompañamiento en Mejores Prácticas de Desarrollo',
-      bestPracticesDescription: 'Te acompañamos en la implementación de mejores prácticas para optimizar el desarrollo y la calidad de tus proyectos.',
-      principles: 'Nuestros Principios',
+      title: 'Qué ofrecemos',
+      subtitle: 'Soluciones fáciles para tu negocio',
+      cloudTitle: 'Servicios en la nube',
+      cloudDescription: 'En un mundo que necesita de alta disponibilidad la nube es la solución perfecta, pero hay más de un proveedor, nosotros te ayudamos a escoger el mejor para ti, y nos adaptamos si ya usas alguna solución',
+      auditTitle: 'Revisión de tu nube',
+      auditDescription: 'La seguridad en lo más importante, somos expertos en auditorías en seguridad, dale confianza a tus clientes y aumenta la seguridad de tus sistemas cumpliendo con certificaciones, normas y políticas de seguridad.',
+      talentTitle: 'Equipo especializado',
+      talentDescription: 'Conectamos tu empresa con profesionales expertos en tecnología.',
+      customDevelopmentTitle: 'Proyectos a tu medida',
+      customDevelopmentDescription: 'Creamos herramientas adaptadas a lo que tu negocio necesita.',
+      legacyMigrationTitle: 'Actualización de tus sistemas antiguos',
+      legacyMigrationDescription: 'Llevamos tus aplicaciones actuales a plataformas más sencillas y confiables.',
+      bestPracticesTitle: 'Buenas prácticas',
+      bestPracticesDescription: 'Te guiamos paso a paso para mejorar tus procesos de desarrollo.',
+      principles: 'Por qué elegirnos',
       easy: 'Fácil de usar',
-      secure: 'Segura',
+      secure: 'Seguro',
       efficient: 'Eficiente',
-      scalable: 'Escalable',
-      techSouldBe: 'La tecnología siempre debería ser...'
+      scalable: 'Crece contigo',
+      techSouldBe: 'La tecnología debería ser sencilla'
     },
     en: {
-      title: 'Our Services',
-      subtitle: 'Cloud specialists',
-      cloudTitle: 'Cloud Computing',
-      cloudDescription: 'We work with the 3 main providers: AWS, GCP and Azure. We have certified cloud personnel. We can perform both maintenance and cloud architectures from scratch.',
-      auditTitle: 'Cloud Audit',
-      auditDescription: 'We collaborate with other consultancies as expert cloud auditors, ensuring best practices and optimization.',
-      talentTitle: 'Talent Attraction',
-      talentDescription: 'We help in attracting prepared talent specialized in cloud technologies.',
-      customDevelopmentTitle: 'Custom Systems Development',
-      customDevelopmentDescription: 'Custom systems development to meet the specific needs of your business.',
-      legacyMigrationTitle: 'Legacy Systems Migration to Next Gen',
-      legacyMigrationDescription: 'We migrate your legacy systems to modern and scalable technologies to improve performance and maintainability.',
-      bestPracticesTitle: 'Support in Best Development Practices',
-      bestPracticesDescription: 'We support you in implementing best practices to optimize development and the quality of your projects.',
-      principles: 'Our Principles',
+      title: 'What We Offer',
+      subtitle: 'Simple solutions for your business',
+      cloudTitle: 'Cloud Services',
+      cloudDescription: 'In a world that needs high availability, the cloud is the perfect solution, but there are more than one provider, we help you choose the best for you, and we adapt if you already use some solution',
+      auditTitle: 'Cloud Review',
+      auditDescription: 'Security is the most important thing, we are experts in security audits, give confidence to your clients and increase security by complying with certifications, standards and security policies.',
+      talentTitle: 'Expert Team',
+      talentDescription: 'We connect you with professionals skilled in technology.',
+      customDevelopmentTitle: 'Tailored Projects',
+      customDevelopmentDescription: 'We build tools designed specifically for your needs.',
+      legacyMigrationTitle: 'Updating Your Old Systems',
+      legacyMigrationDescription: 'We move your existing apps to simpler, more reliable platforms.',
+      bestPracticesTitle: 'Best Practices',
+      bestPracticesDescription: 'We guide you step-by-step to improve your development processes.',
+      principles: 'Why Choose Us',
       easy: 'Easy to use',
       secure: 'Secure',
       efficient: 'Efficient',
-      scalable: 'Scalable',
-      techSouldBe: 'Technology should always be...'
+      scalable: 'Grows with you',
+      techSouldBe: 'Technology should be simple'
     }
   };
 
@@ -73,7 +73,7 @@ const ServicesSection = ({ language }) => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-foreground/80 mb-4">
+              <p className="text-foreground/80 mb-4 text-justify">
                 {t.cloudDescription}
               </p>
               <div className="flex space-x-4">
@@ -92,7 +92,11 @@ const ServicesSection = ({ language }) => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-foreground/80">{t.auditDescription}</p>
+              <p className="text-foreground/80 mb-4 text-justify">{t.auditDescription}</p>
+              <div className="flex space-x-4">
+                <div className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">ISO 27001</div>
+                <div className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">SOC 1/2</div>
+              </div>
             </CardContent>
           </Card>
 

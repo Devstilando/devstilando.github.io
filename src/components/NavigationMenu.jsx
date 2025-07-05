@@ -18,17 +18,17 @@ const NavigationMenu = ({ language, onLanguageChange }) => {
 
   const translations = {
     es: {
-      about: 'Nosotros',
-      services: 'Servicios',
-      experience: 'Experiencia',
+      about: 'Sobre nosotros',
+      services: 'Soluciones',
+      experience: 'Nuestra trayectoria',
       clients: 'Clientes',
       contact: 'Contacto'
     },
     en: {
-      about: 'About',
-      services: 'Services',
-      experience: 'Experience',
-      clients: 'Clients',
+      about: 'About Us',
+      services: 'What We Offer',
+      experience: 'Our Journey',
+      clients: 'Our Clients',
       contact: 'Contact'
     }
   };

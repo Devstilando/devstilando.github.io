@@ -17,26 +17,26 @@ const LinkedInIcon = () => (
 const ContactSection = ({ language }) => {
   const translations = {
     es: {
-      title: 'Contacto',
-      subtitle: 'Comencemos a transformar tu tecnología',
-      email: 'Correo Electrónico',
+      title: 'Contáctanos',
+      subtitle: '¿Tienes preguntas? Escríbenos',
+      email: 'Correo electrónico',
       linkedin: 'LinkedIn',
       location: 'Ubicación',
-      cta: 'Enviar Correo',
-      ctaDescription: 'Contáctanos para una consulta gratuita',
-      formEmail: 'Correo Electrónico',
-      formMessage: 'Mensaje'
+      cta: 'Enviar mensaje',
+      ctaDescription: 'Estamos aquí para ayudarte',
+      formEmail: 'Tu correo',
+      formMessage: 'Tu mensaje'
     },
     en: {
-      title: 'Contact',
-      subtitle: 'Let\'s start transforming your technology',
+      title: 'Get in Touch',
+      subtitle: 'Have questions? Drop us a message',
       email: 'Email',
       linkedin: 'LinkedIn',
       location: 'Location',
-      cta: 'Send E-mail',
-      ctaDescription: 'Contact us for a free consultation',
-      formEmail: 'Email',
-      formMessage: 'Message'
+      cta: 'Send Message',
+      ctaDescription: 'We’re here to help',
+      formEmail: 'Your email',
+      formMessage: 'Your message'
     }
   };
 

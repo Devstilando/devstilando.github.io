@@ -13,10 +13,10 @@ import { useToast } from "@/components/ui/use-toast";
 
 const translations = {
   en: {
-    messageSentSuccess: "Email sent, we will contact you very soon",
+    messageSentSuccess: "Your message was sent! We'll reach out shortly",
   },
   es: {
-    messageSentSuccess: "Correo electrónico enviado, te contactaremos muy pronto",
+    messageSentSuccess: "¡Mensaje enviado! Te contactaremos pronto",
   },
 };
 
